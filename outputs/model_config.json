@@ -1,0 +1,67 @@
+{
+  "best_threshold_percent": 0.30000000000000004,
+  "best_threshold_decimal": 0.0030000000000000005,
+  "direction_accuracy_at_threshold": 0.6818181818181818,
+  "prediction_features": [
+    "vix_20d_change",
+    "gold_vol",
+    "gold_silver_ratio",
+    "usdinr_return",
+    "bank_return_lag5",
+    "india_vix",
+    "oil_return",
+    "gold_vix_interaction",
+    "bank_momentum_20d",
+    "gold_bank_corr_30d",
+    "gold_return_lag1",
+    "is_crisis",
+    "is_late_cycle",
+    "is_expansion"
+  ],
+  "base_features": [
+    "vix_20d_change",
+    "gold_vol",
+    "gold_silver_ratio",
+    "usdinr_return",
+    "bank_return_lag5",
+    "india_vix",
+    "oil_return",
+    "gold_vix_interaction",
+    "bank_momentum_20d",
+    "gold_bank_corr_30d",
+    "gold_return_lag1"
+  ],
+  "hmm_features": [
+    "nifty_return",
+    "india_vix",
+    "bank_spread",
+    "gold_nifty_corr_30d",
+    "nifty_vol"
+  ],
+  "regime_order": [
+    "Crisis",
+    "Late_Cycle",
+    "Expansion"
+  ],
+  "regime_training_mode": "pooled_weighted_compact_features",
+  "final_model_params": {
+    "n_estimators": 100,
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 10,
+    "reg_lambda": 1.0
+  },
+  "feature_ranking_params": {
+    "n_estimators": 200,
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 10,
+    "reg_lambda": 2.0
+  },
+  "regime_weight_own": 8.0,
+  "regime_weight_other": 1.0
+}

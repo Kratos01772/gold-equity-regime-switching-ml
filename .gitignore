@@ -1,0 +1,33 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dll
+
+.venv/
+venv/
+env/
+ENV/
+
+.ipynb_checkpoints/
+.idea/
+.vscode/
+
+*.log
+.DS_Store
+Thumbs.db
+
+.streamlit/secrets.toml
+
+# Local caches
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# Conda / notebook junk
+conda-meta/
+.python-version
+
+# Large or machine-specific temp files
+desktop.ini

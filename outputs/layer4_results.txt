@@ -1,0 +1,19 @@
+=== LAYER 4 RESULTS — BACKTESTING ===
+Generated: 2026-04-09 17:02:55.040394
+
+--- STRATEGY PERFORMANCE ---
+Strategy        | Total Return | Ann. Return | Sharpe | Max DD  | Win Rate
+----------------|-------------|-------------|--------|---------|--------
+Regime Model   |     193.59% |      68.36% | 6.3318 | -11.94% |  52.32%
+Global Model   |      37.12% |      16.50% | 1.9104 |  -4.26% |  40.45%
+Buy & Hold     |      28.50% |      12.89% | 0.5777 | -11.89% |  53.93%
+
+--- FINAL SUMMARY ---
+Regime Model Sharpe    : 6.3318
+Global Model Sharpe    : 1.9104
+Buy & Hold Sharpe      : 0.5777
+Regime vs BuyHold      : 10.96x better Sharpe
+Number of trades       : 228
+Hypothesis confirmed   : Yes (gold regime-dependent, 3.07x R² improvement)
+Report saved to        : outputs/final_report.html
+=== END ===

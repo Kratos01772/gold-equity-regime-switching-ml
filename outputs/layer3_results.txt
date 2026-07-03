@@ -1,0 +1,68 @@
+=== LAYER 3 RESULTS — REGIME-SPECIFIC XGBOOST + SHAP ===
+Generated: 2026-04-09 16:45:42.766517
+
+--- TRAINING SUMMARY ---
+  Global_bank : 2308 train samples
+  Crisis_bank : 711 train samples
+  Late_Cycle_bank : 677 train samples
+  Expansion_bank : 537 train samples
+  Crisis_it : 711 train samples
+  Late_Cycle_it : 677 train samples
+  Expansion_it : 537 train samples
+
+--- MODEL PERFORMANCE (Test Set) ---
+Model                  | R²      | RMSE    | MAE     | Direction%
+-----------------------|---------|---------|---------|----------
+Global_bank            |  0.1158 |   0.81% |   0.58% |   62.96%
+Crisis_bank            |  0.1531 |   2.11% |   1.58% |   87.50%
+Late_Cycle_bank        |  0.0515 |   0.91% |   0.70% |   55.79%
+Expansion_bank         |  0.3554 |   0.63% |   0.43% |   73.21%
+Crisis_it              |  0.1551 |   1.51% |   1.25% |   75.00%
+Late_Cycle_it          |  0.2676 |   0.97% |   0.68% |   69.47%
+Expansion_it           |  0.3499 |   0.89% |   0.62% |   71.77%
+
+Best regime model vs Global: Regime R²=0.355394 vs Global R²=0.115775
+Improvement: 3.07x better
+
+--- GOLD SHAP IMPORTANCE BY REGIME ---
+Regime        | Mean |SHAP| | Feature Rank | Interpretation
+--------------|------------|--------------|---------------
+Crisis       |   0.000521 |          #13 | Low          
+Late_Cycle   |   0.000882 |           #2 | High         
+Expansion    |   0.000529 |           #4 | High         
+
+--- HYPOTHESIS TEST ---
+t-statistic : -0.072742
+p-value     : 0.943996
+Significant : No (threshold: p < 0.05)
+Gold SHAP ratio (Late_Cycle vs Expansion): 1.67x
+
+--- TOP 5 FEATURES PER REGIME (from SHAP) ---
+Crisis:
+  1. bank_spread : 0.001965
+  2. nifty_amihud : 0.001311
+  3. gold_vol : 0.001121
+  4. usdinr_return_lag20 : 0.000840
+  5. gold_return_lag5 : 0.000792
+
+Late_Cycle:
+  1. india_vix : 0.001089
+  2. gold_return_lag1 : 0.000882
+  3. nifty_momentum_20d : 0.000860
+  4. gold_return_lag5 : 0.000782
+  5. gold_nifty_corr_30d : 0.000590
+
+Expansion:
+  1. bank_momentum_20d : 0.000602
+  2. gold_silver_ratio : 0.000585
+  3. nifty_return_lag5 : 0.000581
+  4. gold_return_lag1 : 0.000529
+  5. bank_return_lag20 : 0.000524
+
+--- VALIDATION FLAGS ---
+Test set size     : 521 rows (18.42% of total)
+Test date range   : 2023-01-02 to 2024-12-30
+Regimes in test   : ['Late_Cycle', 'Expansion', 'Crisis']
+Models skipped    : ['Crisis_metal', 'Crisis_fmcg', 'Expansion_metal', 'Expansion_fmcg', 'Late_Cycle_metal', 'Late_Cycle_fmcg', 'Regime_3_bank', 'Regime_3_it', 'Regime_3_metal', 'Regime_3_fmcg']
+
+=== END OF REPORT ===

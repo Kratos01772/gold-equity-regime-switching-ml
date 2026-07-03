@@ -1,0 +1,63 @@
+=== LAYER 5 — PRICE FORECAST ===
+Generated: 2026-04-09 17:17:00.821203
+Last known date    : 2024-12-31
+Last known price   : ₹50,952.75
+Current regime     : Late_Cycle
+
+--- 30-DAY FORECAST TABLE ---
+Date       | Regime     | Pred Return | Pred Price | Lower Band | Upper Band
+-----------|------------|-------------|------------|------------|----------
+2025-01-01 | Late_Cycle |      -0.27% | ₹50,814.62 | ₹49,389.22 | ₹52,281.16
+2025-01-02 | Late_Cycle |      +0.24% | ₹50,937.00 | ₹48,928.12 | ₹53,028.35
+2025-01-03 | Late_Cycle |      +0.17% | ₹51,021.26 | ₹48,567.86 | ₹53,598.58
+2025-01-06 | Late_Cycle |      +0.24% | ₹51,144.13 | ₹48,315.08 | ₹54,138.83
+2025-01-07 | Late_Cycle |      +0.24% | ₹51,267.30 | ₹48,107.23 | ₹54,634.94
+2025-01-08 | Late_Cycle |      +0.24% | ₹51,390.76 | ₹47,931.15 | ₹55,100.08
+2025-01-09 | Late_Cycle |      +0.20% | ₹51,493.28 | ₹47,759.33 | ₹55,519.16
+2025-01-10 | Late_Cycle |      +0.23% | ₹51,611.52 | ₹47,620.84 | ₹55,936.61
+2025-01-13 | Late_Cycle |      +0.20% | ₹51,714.48 | ₹47,483.48 | ₹56,322.47
+2025-01-14 | Late_Cycle |      +0.23% | ₹51,833.69 | ₹47,373.71 | ₹56,713.56
+2025-01-15 | Late_Cycle |      +0.15% | ₹51,913.63 | ₹47,238.86 | ₹57,051.01
+2025-01-16 | Late_Cycle |      +0.16% | ₹51,997.01 | ₹47,116.61 | ₹57,382.92
+2025-01-17 | Late_Cycle |      +0.16% | ₹52,080.52 | ₹47,002.75 | ₹57,706.86
+2025-01-20 | Late_Cycle |      +0.17% | ₹52,169.57 | ₹46,901.14 | ₹58,029.81
+2025-01-21 | Late_Cycle |      +0.17% | ₹52,258.77 | ₹46,806.11 | ₹58,346.64
+2025-01-22 | Late_Cycle |      +0.17% | ₹52,348.13 | ₹46,717.01 | ₹58,658.00
+2025-01-23 | Late_Cycle |      +0.17% | ₹52,437.64 | ₹46,633.27 | ₹58,964.47
+2025-01-24 | Late_Cycle |      +0.17% | ₹52,527.30 | ₹46,554.40 | ₹59,266.51
+2025-01-27 | Late_Cycle |      +0.17% | ₹52,617.11 | ₹46,480.00 | ₹59,564.55
+2025-01-28 | Late_Cycle |      +0.16% | ₹52,701.05 | ₹46,404.40 | ₹59,852.09
+2025-01-29 | Late_Cycle |      +0.16% | ₹52,785.11 | ₹46,332.61 | ₹60,136.23
+2025-01-30 | Late_Cycle |      +0.16% | ₹52,869.32 | ₹46,264.35 | ₹60,417.25
+2025-01-31 | Late_Cycle |      +0.16% | ₹52,953.65 | ₹46,199.37 | ₹60,695.40
+2025-02-03 | Late_Cycle |      +0.16% | ₹53,038.12 | ₹46,137.47 | ₹60,970.89
+2025-02-04 | Late_Cycle |      +0.16% | ₹53,122.73 | ₹46,078.44 | ₹61,243.93
+2025-02-05 | Late_Cycle |      +0.16% | ₹53,207.47 | ₹46,022.10 | ₹61,514.68
+2025-02-06 | Late_Cycle |      +0.16% | ₹53,292.34 | ₹45,968.30 | ₹61,783.32
+2025-02-07 | Late_Cycle |      +0.16% | ₹53,377.36 | ₹45,916.89 | ₹62,049.98
+2025-02-10 | Late_Cycle |      +0.16% | ₹53,462.50 | ₹45,867.74 | ₹62,314.80
+2025-02-11 | Late_Cycle |      +0.16% | ₹53,547.79 | ₹45,820.73 | ₹62,577.90
+
+--- SUMMARY ---
+Forecast end price : ₹53,547.79
+Expected change    : +5.09% over 30 days
+Regime breakdown   : 0 days Crisis, 30 days Late_Cycle, 0 days Expansion
+Most likely regime : Late_Cycle
+
+--- VALIDATION SUMMARY ---
+Forecast direction accuracy (30-day): 47.06%
+Confidence band hit rate (30-day): 93.53% of actual prices fell within bands
+Mean absolute price error (30-day): 6.43%
+Validation windows (30-day)      : 17
+Forecast direction accuracy (5-day): 61.11%
+Confidence band hit rate (5-day) : 94.44% of actual prices fell within bands
+Mean absolute price error (5-day) : 1.83%
+Validation windows (5-day)       : 18
+
+=== IMPORTANT CAVEATS ===
+- This is a statistical model forecast, not financial advice
+- Prediction error compounds over multi-step horizon
+- Confidence bands widen with each step
+- Model trained on data up to 2022-12-31
+
+=== END ===

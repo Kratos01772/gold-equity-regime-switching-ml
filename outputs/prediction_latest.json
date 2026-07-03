@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-04-09T18:28:42.379527",
+  "current_price": 59348.25,
+  "predicted_price": 59391.33026228488,
+  "predicted_return_pct": 0.07256260141730309,
+  "signal": "HOLD",
+  "regime": "Crisis",
+  "regime_confidence": 1.0,
+  "regime_probabilities": {
+    "Crisis": 1.0,
+    "Late_Cycle": 1.0495730933741439e-41,
+    "Expansion": 8.068339943049249e-68
+  },
+  "confidence_band": {
+    "lower": 57454.1167345494,
+    "upper": 61393.86193370327
+  },
+  "top_features": [
+    {
+      "name": "gold_vol",
+      "shap_value": -0.0006640832289122045,
+      "direction": "down"
+    },
+    {
+      "name": "vix_20d_change",
+      "shap_value": 0.0004777622816618532,
+      "direction": "up"
+    },
+    {
+      "name": "gold_vix_interaction",
+      "shap_value": -0.0004389494424685836,
+      "direction": "down"
+    }
+  ]
+}

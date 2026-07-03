@@ -1,0 +1,60 @@
+=== IMPROVED MODEL RESULTS ===
+Generated: 2026-04-09 18:05:46.993149
+
+--- FEATURE ENGINEERING ---
+Original features : 31
+New features added: 13
+Final feature count: 44
+Compact feature count: 11
+Compact features: vix_20d_change, gold_vol, gold_silver_ratio, usdinr_return, bank_return_lag5, india_vix, oil_return, gold_vix_interaction, bank_momentum_20d, gold_bank_corr_30d, gold_return_lag1
+
+--- WALK-FORWARD CV RESULTS ---
+  Fold     Regime        R2     RMSE  Direction%
+Fold 1     Crisis -0.215003 0.012610   50.980392
+Fold 1 Late_Cycle -0.041226 0.010914   56.666667
+Fold 1  Expansion  0.012074 0.008099   56.666667
+Fold 2     Crisis -0.048786 0.022820   54.411765
+Fold 2 Late_Cycle -0.015327 0.011545   66.666667
+Fold 2  Expansion -0.028255 0.011962   53.846154
+Fold 3     Crisis  0.022104 0.014943   56.800000
+Fold 3 Late_Cycle -0.038660 0.012644   36.923077
+Fold 3  Expansion -0.078282 0.009699   39.436620
+Fold 4     Crisis  0.011693 0.013373   53.801170
+Fold 4 Late_Cycle -0.134305 0.012807   49.367089
+Fold 4  Expansion -0.126831 0.008734   50.000000
+Fold 5     Crisis -0.027189 0.023255   62.500000
+Fold 5 Late_Cycle -0.041321 0.009496   48.421053
+Fold 5  Expansion  0.000033 0.007888   52.153110
+Crisis mean R2: -0.051 +/- 0.096
+Late_Cycle mean R2: -0.054 +/- 0.046
+Expansion mean R2: -0.044 +/- 0.058
+
+--- TUNED MODEL PERFORMANCE (Test Set 2023+) ---
+Model           | R2    | RMSE  | MAE   | Direction%
+----------------|-------|-------|-------|----------
+Crisis_bank    | -0.027 | 2.33% | 1.68% | 62.5%
+Late_Cycle_bank| -0.041 | 0.95% | 0.73% | 48.4%
+Expansion_bank | 0.000 | 0.79% | 0.58% | 52.2%
+Ensemble       | -0.004 | 0.86% | 0.62% | 52.2%
+Global_bank    | -0.072 | 0.89% | 0.63% | 52.2%
+
+--- IMPROVEMENT SUMMARY ---
+Old best R2     : 0.3554 (Expansion_bank)
+New best R2     : 0.0000 (Expansion_bank)
+Improvement     : -99.99%
+Old direction%  : 73.21% (Expansion)
+New direction%  : 52.15%
+Ensemble vs best single: -132.25x
+
+--- OPTIMAL THRESHOLD ---
+Best signal threshold: +/-0.30%
+Direction acc at threshold: 68.18%
+
+--- GOLD SHAP (UPDATED) ---
+Crisis     : 0.000085 (rank #11)
+Late_Cycle : 0.000562 (rank #1)
+Expansion  : 0.000249 (rank #4)
+Gold SHAP t-stat (Crisis vs Expansion): -9.185568
+Gold SHAP p-value (Crisis vs Expansion): 0.000007
+Gold SHAP ratio (Late_Cycle vs Expansion): 2.25x
+=== END ===
